@@ -22,67 +22,68 @@ html{
 .container{
     max-width: 1275px;
     height: 640px;
-    display: flex;
-    justify-content: space-between;
-    background-position-y: -10px ;
-    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+    
     
 }
 .logo img{
-    top: -30px;
+    top: -130px;
     position: relative;
     width: 134.85px;
     height: 56px;
 }
 
-.left-card{
-    max-width: 723px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    justify-items: end;
-    position: relative;
-    aspect-ratio: 1;
-    background-color: #121725;
-
-}
 
 
 .card-img{
-    background-image: url(assets/desktop/image-host.jpg);
-    background-position: 10px;
-    background-repeat: no-repeat;
-    background-position: -300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: last baseline;
-    align-items: end;
+    grid-column: 2 /4;
+    grid-row: 1 /2;
     width: 888px;
     height: 640px;
-    
     position: relative;
-    aspect-ratio: 1;
-    top: -10px;
-    right: 0;
-
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    
 }
 
 
 
-.card-img {
+
+
+.left-card{
+    grid-column: 1 / 3 ;
+    grid-row: 1/2;
+    max-width: 723px;
+    height: 540px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    position: absolute;
+    top: 265px;
+    z-index: 2;
+    background-color: #121725;
+    
+    
+
+}
+.main-img img{
     width: 888px;
     height: 640px;
-    
 }
 
 .card-img-dots {
     max-width: 232px;
     height: 104px;
-    position: relative;
-    bottom: -580px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    bottom: 0;
+    top: 590px;
+    position: absolute;
+    z-index: 1;
     
 }
 
@@ -102,6 +103,7 @@ html{
     font-weight: 700;
     padding-left: 25px;
     border-radius: 28px;
+    border: none;
 }
 .wrapper button{
     width: 162px;
@@ -140,4 +142,6 @@ p{
     font-size: 18px;
     font-weight: 300;
     line-height: 1.8;
+    width: 445px;
+
 }
