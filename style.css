@@ -1,0 +1,143 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Chivo", sans-serif;
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: #121725; 
+}
+html{
+    max-width: 1440px;
+    margin: 0px 100px;
+}
+
+.container{
+    max-width: 1275px;
+    height: 640px;
+    display: flex;
+    justify-content: space-between;
+    background-position-y: -10px ;
+    position: relative;
+    
+}
+.logo img{
+    top: -30px;
+    position: relative;
+    width: 134.85px;
+    height: 56px;
+}
+
+.left-card{
+    max-width: 723px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-items: end;
+    position: relative;
+    aspect-ratio: 1;
+    background-color: #121725;
+
+}
+
+
+.card-img{
+    background-image: url(assets/desktop/image-host.jpg);
+    background-position: 10px;
+    background-repeat: no-repeat;
+    background-position: -300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: last baseline;
+    align-items: end;
+    width: 888px;
+    height: 640px;
+    
+    position: relative;
+    aspect-ratio: 1;
+    top: -10px;
+    right: 0;
+
+}
+
+
+
+.card-img {
+    width: 888px;
+    height: 640px;
+    
+}
+
+.card-img-dots {
+    max-width: 232px;
+    height: 104px;
+    position: relative;
+    bottom: -580px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
+}
+
+.wrapper{
+    width: 427px;
+    height: 56px;
+    position: relative;
+    
+}
+
+.wrapper input{
+    width: 100%;
+    height: 56px;
+    background-color: #2C344B;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    padding-left: 25px;
+    border-radius: 28px;
+}
+.wrapper button{
+    width: 162px;
+    height: 80%;
+    background-color: #54E6AF;
+    color: #121725;
+    border: none;
+    border-radius: 28px;
+    font-size: 14px;
+    font-weight: 700;
+    aspect-ratio: 2;
+    position: absolute;
+    right: 1%;
+    top: 10%;
+    
+}
+.logos{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+h1{
+    font-size: 52px;
+    font-weight: 200;
+    line-height: 1.2;
+    color:#54E6AF;
+    text-transform: uppercase;
+    width: 665px;
+}
+span{
+    color: white
+}
+p{
+    color: #C2CBE5;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.8;
+}
